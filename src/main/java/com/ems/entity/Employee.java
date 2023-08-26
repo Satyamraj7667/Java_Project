@@ -32,11 +32,11 @@ public class Employee {
 	private String role;
 	private long salary;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name = "Department_Id")
 	private Department dept;
 
-	@OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "employee")
 	private List<TimeandAttendance> timeAndAttendanceList;
 
 	public int getId() {

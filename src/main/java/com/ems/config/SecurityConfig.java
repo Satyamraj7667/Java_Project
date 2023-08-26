@@ -57,7 +57,6 @@ public class SecurityConfig {
 		                 .and()
 		                 .formLogin()
 		                 .permitAll();
-		       
 		   
 		   return httpsecurity.build();
 	  }
